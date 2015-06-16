@@ -1,0 +1,6 @@
+* cl-event-handler: a simplistic event-driven handler framework
+
+** Usage
+
+Use your typical ASDF system definition package, be it the old, deprecated ASDF,
+or quicklisp.
