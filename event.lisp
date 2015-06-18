@@ -14,3 +14,7 @@ responses."))
 (defclass pong-event (event)
   ()
   (:documentation "An event used as a reply to PING-EVENT events."))
+
+(export '(event
+          ping-event
+          pong-event))
