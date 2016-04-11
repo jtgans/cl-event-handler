@@ -7,6 +7,11 @@
   (:documentation "An event. SENDER contains the HANDLER to use for
 responses."))
 
+(defmethod print-object ((object event) stream)
+  (print-unreadable-object (object stream :type t)
+    (with-slots (sender) object
+      (format stream ":SENDER ~a" sender))))
+
 (defclass ping-event (event)
   ()
   (:documentation "An event used to ping a handler for aliveness."))
